@@ -1,17 +1,13 @@
-# UNI-D 4th Baseline
-## Image Denoising Task Using Restormer
+## 코드 구조
 
-### 코드 구조
+- preprocess.py : baseline과 같음.
+- Reestormer.ipynb : restormer official repository에서 제공하는 colab 파일을 대회에 맞춰서 수정했음.
 
-```
-${PROJECT}
-├── README.md
-├── preprocess.py
-├── model.py
-├── train.py
-└── test.py
-```
-- preprocess.py -> preprocess data : unzip후 데이터 경로를 알맞게 수정할 것
-- test.py -> Inference : Image Denoising Inference 코드
-- train.py -> Training Restormer 
-- model.py -> Implementation of Restormer 
+## 출처
+pre-trained weights : official repository에 첨부된 링크에서 다운받음
+
+## 훈련 환경
+colab a100
+
+## 훈련 방법
+pretrain된 모델을 가져와서 대회 데이터셋에 fine-tuning 했음
